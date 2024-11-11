@@ -1,0 +1,273 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="booking.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+  
+  <title>Stage Fright | Booking</title>
+</head>
+
+<body>
+  <!-- heading -->
+  <header>
+    <nav class="top-0 text-white" style="background-color: black; font-family: 'Times New Roman';">
+        <div class="flex justify-between items-center px-7" style="height: 80px;">
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.spotify.com" target="_blank" class="social-icon">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com" target="_blank" class="social-icon">
+                    <i class="fab fa-apple"></i>
+                </a>
+            </div>
+          
+            
+   <div class="flex-grow text-center font-bold text-white ml-20" style="font-size: 24px;">
+    <a href="index.html" class="logo text-white hover:text-white-500 transition-all duration-300" style="font-family: 'Yatra One', cursive;">
+      STAGE FRIGHT
+    </a>
+  </div>
+            <ul class="opacity-100 list-style-none flex">
+                <li id="menuNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="menu.html" class="relative">TOUR</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="orderNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="order.html" class="relative">MERCH</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="caterNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="about.html" class="relative">ABOUT</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="musicNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="music.html" class="relative">MUSIC</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="musicNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                  <a href="booking.html" class="relative">BOOKING</a>
+                  <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+
+  #bookingModal {
+    display: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal content box */
+  #bookingModal .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95); 
+    transform-origin: center center; 
+    transition: transform 0.3s ease; 
+  }
+  
+  #bookingModal.show .modal-content {
+    transform: scale(1); 
+  }
+
+  #closeModal {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #closeModal:hover {
+    background-color: #aaa;
+  }
+  
+  .modal-content input {
+    padding: 10px;
+    margin-bottom: 12px;
+    color:#333
+  }
+  
+  .modal-content button {
+    margin-top: 12px;
+  }</style>
+
+</head>
+
+<body class="bg-blacks">
+<section class="py-20 text-center">
+<div class="max-w-4xl mx-auto bg-black-800 p-8 rounded-lg shadow-lg">
+  <h2 class="text-4xl font-light mb-6 text-white">GET IN TOUCH</h2>
+  <p class="text-lg font-medium mb-10 text-white">For booking inquiries, please click below to book Stage Fright for your event!</p>
+
+  <button id="bookNowButton" class="bg-[#1a4068] hover:bg-[#2B6CB0CC] text-white py-2 px-6 rounded-lg transition-all duration-300">
+    Book Us Now
+</button>
+
+</div>
+</section>
+
+<div id="bookingModal" class="hidden">
+<div class="modal-content">
+  <h2 class="text-2xl font-bold mb-4">Book a Show</h2>
+  <form id="bookingForm" action="bookingconfirmation.html" method="GET">
+    <label for="firstName" class="block text-sm font-medium mb-2 text-black">First Name</label>
+    <input type="text" id="firstName" name="firstName" required class="w-full p-2 border rounded-lg mb-4">
+
+    <label for="lastName" class="block text-sm font-medium mb-2 text-black">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required class="w-full p-2 border rounded-lg mb-4">
+
+    <label for="eventName" class="block text-sm font-medium mb-2 text-black">Event Name</label>
+    <input type="text" id="eventName" name="eventName" required class="w-full p-2 border rounded-lg mb-4">
+
+    <label for="eventDate" class="block text-sm font-medium mb-2 text-black">Select Date</label>
+    <input type="date" id="eventDate" name="eventDate" required class="w-full p-2 border rounded-lg mb-4">
+
+    <label for="eventTime" class="block text-sm font-medium mb-2 text-black">Select Time</label>
+    <input type="time" id="eventTime" name="eventTime" required class="w-full p-2 border rounded-lg mb-4">
+
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg w-full transition-all duration-300">
+      Book Show
+    </button>
+
+
+<script>
+  function storeFormData(event) {
+    event.preventDefault(); 
+
+    const formData = {
+      firstName: document.getElementById("firstName").value,
+      lastName: document.getElementById("lastName").value,
+      eventName: document.getElementById("eventName").value,
+      eventDate: document.getElementById("eventDate").value,
+      eventTime: document.getElementById("eventTime").value
+    };
+
+    localStorage.setItem('bookingData', JSON.stringify(formData));
+
+    event.target.submit();
+  }
+</script>
+  </form>
+
+  <button id="closeModal" class="w-full bg-gray-400 hover:bg-gray-500 text-white py-2 px-6 rounded-lg">
+    Close
+  </button>
+</div>
+</div>
+<section class="service-sections">
+  <div class="left-section">
+    <h3>CONTACT US</h3>
+    <p>If you have any questions or need assistance, feel free to reach out to our team via email.</p>
+    <a href="mailto:stagefright@gmail.com" class="contact-button">Contact Us</a>
+  </div>
+
+  <div class="right-section">
+    <h3>CUSTOMER SERVICE</h3>
+    <p>Need support? Our customer service team is here to help with any issues you might face.</p>
+    <a href="mailto:stagefrightcustomersupport@gmail.com" class="service-button">Contact Customer Service</a>
+  </div>
+</section>
+
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold" style="font-family: 'Yatra One', cursive;">
+          <a href="index.html" class="hover:text-white-500 ml-20">STAGE FRIGHT</a>
+      </h1>
+        <div class="flex space-x-4 mr-10">
+          <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="social-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.spotify.com" target="_blank" class="social-icon">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href="https://music.apple.com" target="_blank" class="social-icon">
+            <i class="fab fa-apple"></i>
+          </a>
+        </div>
+      </div>
+
+      <script>
+      const modal = document.getElementById('bookingModal');
+      const bookNowButton = document.getElementById('bookNowButton');
+      const closeModalButton = document.getElementById('closeModal');
+  
+      bookNowButton.addEventListener('click', function () {
+        modal.style.display = 'flex';  
+      });
+  
+      closeModalButton.addEventListener('click', function () {
+        modal.style.display = 'none'; 
+      });
+    </script>
+      
+      <h2 class="text-lg mb-2 ml-20" style="font-family: 'Abel';">Subscribe</h2>
+      
+      <p class="text-xs pt-4 ml-20" style="font-family: 'Abel';">Designed & Developed by Sreehaasika Katuru & Nimalan Rajkumar</p>
+      <p class="text-xs ml-20" style="font-family: 'Abel';">Theme: Stage Fright BPA Independence High School Frisco TX 2024</p>
+    </div>
+  </footer>
+  
+
+</body>
+
+</html>

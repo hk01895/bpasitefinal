@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="stylesConfirmation.css"> 
+<body>
+  <div class="confirmation-container">
+    <h2 class="text-3xl font-bold text-center mb-6">Congratulations, Your Booking Is Confirmed!</h2>
+    
+    <div class="confirmation-details">
+      <p><strong>First Name:</strong> <span id="confirmationFirstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="confirmationLastName"></span></p>
+      <p><strong>Event:</strong> <span id="confirmationEventName"></span></p>
+      <p><strong>Date:</strong> <span id="confirmationEventDate"></span></p>
+      <p><strong>Time:</strong> <span id="confirmationEventTime"></span></p>
+    </div>
+    
+    <div class="thank-you-message text-center">
+      <p class="text-xl text-green-500">Thank you for your booking!</p>
+    </div>
+    
+    <div class="back-to-home text-center mt-6">
+      <button onclick="window.location.href='booking.html'">Back to Homepage</button>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    document.getElementById('confirmationFirstName').textContent = urlParams.get('firstName');
+    document.getElementById('confirmationLastName').textContent = urlParams.get('lastName');
+    document.getElementById('confirmationEventName').textContent = urlParams.get('eventName');
+    document.getElementById('confirmationEventDate').textContent = urlParams.get('eventDate');
+    document.getElementById('confirmationEventTime').textContent = urlParams.get('eventTime');
+  </script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styleME.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+
+  <script src="scriptTicket.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <title>Stage Fright | Tour Dates</title>
+</head>
+
+<body>
+    <nav class="bg-black text-white p-4 fixed top-0 left-0 w-full z-50 flex justify-between items-center">
+        <div class="container">
+            <a href="index.html" class="stage-fright-link">Stage Fright</a>
+        </div>
+    </nav>
+
+
+
+  <div class="tourVideo relative">
+    <video autoplay loop muted class="w-full h-full object-cover">
+      <source src="your-video-1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage1.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Los Angeles, CA</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            McCadden Place Theatre
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                           Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Los Angeles"
+                data-place="  McCadden Place Theatre, Los Angeles, CA"
+                data-day="2024-9-19"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage2.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Manhattan, NY</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Radio City Music Hall
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Tue, Nov 19, 11:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                           Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights New York"
+                data-place=" Radio City Music Hall, Manhattan, NY"
+                data-day="2024-11-19"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage3.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Houston, Texas</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Toyota Center
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sun, Dec 1, 10:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                          Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Houston"
+                data-place="Toyota Center, Houston, TX"
+                data-day="2024-12-1"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage4.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Nevada, LV</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            T-Mobile Arena
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Dec 7, 9:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                          Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Las Vegas"
+                data-place=" T-Mobile Arena, Nevada, LV"
+                data-day="2024-12-7"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage5.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Nashville, Tennesssee</p>
+                    <p class="price">70$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                           Ryman Auditorium
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sun, Dec 8, 10:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                            Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Tennesssee"
+                data-place="Ryman Auditorium, Nashville, Tennesssee"
+                data-day="2024-12-8"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage6.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Chicago, IL</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            United Center
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Dec 14, 9:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                            Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Chicago"
+                data-place="United Center, Chicago, IL"
+                data-day="2024-12-14"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage7.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Miami, FL</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            FTX Arena
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sun, Dec 15, 10:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                          Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Florida"
+                data-place="FTX Arena, Miami, FL"
+                data-day="2024-12-15"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage8.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Denver, CO</p>
+                    <p class="price">$79.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Red Rocks Amphitheatre
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Dec 21, 7:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                          Tickets Avaliable
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Colarado"
+                data-place="Red Rocks Amphitheatre, Denver, CO"
+                data-day="2024-12-21"
+                data-price="$79.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="tourimage9.JPG" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Electric Nights World Tour</p>
+                    <div class="separator"></div>
+                    <p class="info">Atlanta, GA</p>
+                    <p class="price">$39.50</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            State Farm Arena
+
+
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sun, Dec 22, 11:00 PM EDT
+                        </p>
+
+                        <p class="info description">
+                            Jeremaiah's Birthday - Tickets $40 off 
+                        </p>
+                    </div>
+                </div>
+                <button class="action"
+                data-title="Electric Nights Colarado"
+                data-place="State Farm Arena, Atlanta, GA"
+                data-day="2024-12-22"
+                data-price="$39.50"
+                onclick="openBookingForm(this)">
+          Book It
+        </button>
+            </div>
+        </div>
+    </div>
+<div id="bookingFormModal" class="hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeBookingForm()">×</span>
+      <h1 id="modalTitle" class="text-3xl text-center mb-6">Book Your Ticket</h1>
+      
+      <div id="bookingFormSection" class="form-section">
+        <form id="bookingForm" onsubmit="submitBooking(event)">
+          <input type="hidden" name="eventTitle" id="eventTitle">
+          <input type="hidden" name="eventPrice" id="eventPrice">
+          <input type="hidden" name="eventPlace" id="eventPlace">
+          <input type="hidden" name="eventDay" id="eventDay">
+    
+          <div class="form-group">
+            <label for="eventName">Event Name</label>
+            <input type="text" id="eventName" name="eventName" readonly>
+          </div>
+    
+          <div class="form-group">
+            <label for="eventPlaceField">Location</label>
+            <input type="text" id="eventPlaceField" name="eventPlaceField" readonly>
+          </div>
+          
+          <div class="form-group">
+            <label for="eventDayField">Date</label>
+            <input type="text" id="eventDayField" name="eventDayField" readonly>
+          </div>
+    
+          <div class="form-group">
+            <label for="eventPriceField">Price</label>
+            <input type="text" id="eventPriceField" name="eventPriceField" readonly>
+          </div>
+          
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="creditCard">Credit Card Number</label>
+            <input type="text" id="creditCard" name="creditCard" required>
+          </div>
+          
+          <button type="submit" class="submit-btn">Submit Booking</button>
+          <button type="button" class="cancel-btn" onclick="closeBookingForm()">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function submitBooking(event) {
+    event.preventDefault(); 
+    
+  
+    const eventTitle = document.getElementById('eventName').value;
+    const eventPlace = document.getElementById('eventPlaceField').value;
+    const eventDay = document.getElementById('eventDayField').value;
+    const eventPrice = document.getElementById('eventPriceField').value;
+    
+    
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const creditCard = document.getElementById('creditCard').value;
+    
+    const confirmationUrl = `confirmation.html?eventTitle=${encodeURIComponent(eventTitle)}&eventPlace=${encodeURIComponent(eventPlace)}&eventDay=${encodeURIComponent(eventDay)}&eventPrice=${encodeURIComponent(eventPrice)}`;
+    
+    window.location.href = confirmationUrl;
+  }
+
+  function closeBookingForm() {
+    document.getElementById('bookingFormModal').classList.add('hidden');
+  }
+</script>
+    </div>
+  </div>
+  
+
+  
+</body>
+</html>

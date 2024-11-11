@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="stylesConfirmation.css"> 
+</head>
+<body>
+  <div class="confirmation-container">
+    <h2 class="text-3xl font-bold text-center mb-6">Congratulations, Your Ticket Has Been Purchased!</h2>
+    
+    <div class="confirmation-details">
+      <p><strong>Event:</strong> <span id="confirmationEventTitle"></span></p>
+      <p><strong>Location:</strong> <span id="confirmationEventPlace"></span></p>
+      <p><strong>Date:</strong> <span id="confirmationEventDay"></span></p>
+      <p><strong>Price:</strong> <span id="confirmationEventPrice"></span></p>
+    </div>
+    
+    <div class="thank-you-message text-center">
+      <p class="text-xl text-green-500">Thank you for your purchase!</p>
+    </div>
+    
+    <div class="back-to-home text-center mt-6">
+      <button onclick="window.location.href='menu.html'">Back to Homepage</button>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('confirmationEventTitle').textContent = urlParams.get('eventTitle');
+    document.getElementById('confirmationEventPlace').textContent = urlParams.get('eventPlace');
+    document.getElementById('confirmationEventDay').textContent = urlParams.get('eventDay');
+    document.getElementById('confirmationEventPrice').textContent = urlParams.get('eventPrice');
+  </script>
+</body>
+</html>

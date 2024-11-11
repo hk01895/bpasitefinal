@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.confirmation-container {
+    background-color: #2d2d2d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.confirmation-details {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.confirmation-details p {
+    margin: 10px 0;
+}
+
+.confirmation-details span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.thank-you-message p {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-top: 20px;
+}
+
+
+.back-to-home {
+    margin-top: 30px;
+}
+
+.back-to-home button {
+    background-color: #1e3a8a;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home button:hover {
+    background-color: #1e3a8a;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    .confirmation-container {
+        padding: 30px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    .confirmation-details {
+        font-size: 1rem;
+    }
+
+    .thank-you-message p {
+        font-size: 1.2rem;
+    }
+
+    .back-to-home button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}

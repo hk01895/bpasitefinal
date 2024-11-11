@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="cartcheckout.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3f044cae79.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+  <script src="scriptcartcheckout.js" defer></script>
+  <title>Stage Fright | Checkout</title>
+</head>
+
+<body class="bg-black">
+
+ 
+ <header>
+    <nav class="top-0 text-white" style="background-color: black; font-family: 'Times New Roman';">
+        <div class="flex justify-between items-center px-7" style="height: 80px;">
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.spotify.com" target="_blank" class="social-icon">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com" target="_blank" class="social-icon">
+                    <i class="fab fa-apple"></i>
+                </a>
+            </div>
+   <div class="flex-grow text-center font-bold text-white ml-20" style="font-size: 24px;">
+    <a href="index.html" class="logo text-white hover:text-white-500 transition-all duration-300" style="font-family: 'Yatra One', cursive;">
+      STAGE FRIGHT
+    </a>
+  </div>
+            <ul class="opacity-100 list-style-none flex">
+                <li id="menuNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="menu.html" class="relative">TOUR</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="orderNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="order.html" class="relative">MERCH</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="caterNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="about.html" class="relative">ABOUT</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="musicNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                    <a href="music.html" class="relative">MUSIC</a>
+                    <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+                </li>
+                <li id="musicNav" class="px-5 pt-6 pb-6 hover:text-blue-500 transition duration-300 relative" data-te-nav-item-ref>
+                  <a href="music.html" class="relative">BOOKING</a>
+                  <div class="h-1 w-full bg-blue-500 absolute bottom-0 left-0 transform scale-x-0 transition-transform duration-300 origin-right hover:scale-x-100"></div>
+              </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <div class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+    <h1 class="text-3xl  mb-6 text-center">CHECKOUT</h1>
+
+
+
+    <form id="checkout-form" action="process-payment.php" method="POST">
+      <div class="mb-4">
+        <label for="first-name" class="block text-sm font-semibold">First Name</label>
+        <input type="text" id="first-name" name="first-name" required class="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your first name">
+      </div>
+
+      <div class="mb-4">
+        <label for="last-name" class="block text-sm font-semibold">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required class="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your last name">
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-semibold">Email Address</label>
+        <input type="email" id="email" name="email" required class="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email address">
+      </div>
+
+      <div class="mb-6">
+        <label for="credit-card" class="block text-sm font-semibold">Credit Card Number</label>
+        <input type="text" id="credit-card" name="credit-card" required class="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your credit card number">
+      </div>
+
+      <div class="mb-4">
+        <a href="cartconfirmation.html" class="w-full">
+            <button type="button" class="w-full p-4 bg-blue-600 text-white font-semibold text-lg rounded-lg hover:bg-#1e3a8a-700 transition duration-200">
+              Pay Now
+            </button>
+          </a>
+        
+      </div>
+    </form>
+  </div>
+
+
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold" style="font-family: 'Yatra One', cursive;">
+          <a href="index.html" class="hover:text-white-500 ml-20">STAGE FRIGHT</a>
+      </h1>
+        <div class="flex space-x-4 mr-10">
+          <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="social-icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.spotify.com" target="_blank" class="social-icon">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href="https://music.apple.com" target="_blank" class="social-icon">
+            <i class="fab fa-apple"></i>
+          </a>
+        </div>
+      </div>
+      
+      <h2 class="text-lg mb-2 ml-20" style="font-family: 'Abel';">Subscribe</h2>
+      
+      <p class="text-xs pt-4 ml-20" style="font-family: 'Abel';">Designed & Developed by Sreehaasika Katuru & Nimalan Rajkumar</p>
+      <p class="text-xs ml-20" style="font-family: 'Abel';">Theme: Stage Fright BPA Independence High School Frisco TX 2024</p>
+    </div>
+  </footer>
+  
+
+</body>
+
+</html>
